@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <rect width="100%" height="100%" rx="10" fill="#04121e" />
+  <g transform="translate(24,24)">
+    <rect x="20" y="20" width="200" height="80" rx="8" fill="#062232"/>
+    <rect x="240" y="30" width="180" height="60" rx="8" fill="#0b2a2d"/>
+    <circle cx="120" cy="180" r="36" fill="#f59e0b"/>
+    <text x="40" y="50" fill="#cfe9ff" font-size="18">Project — Demo 2</text>
+  </g>
+</svg>

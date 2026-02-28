@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>YUN YUN YANG — 個人頁面</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="hero">
+        <img class="avatar" src="assets/avatar.svg" alt="YUN YUN YANG avatar">
+        <h1>YUN YUN YANG</h1>
+        <p class="tagline">深度強化學習 | Personal Demo Page</p>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="about">
+        <h2>關於我</h2>
+        <p>嗨，我是 YUN YUN YANG。這個頁面示範簡單個人頁面配置，包含不重複的圖片與一個互動 DEMO。</p>
+      </section>
+
+      <section class="work">
+        <h2>作品 / 圖片</h2>
+        <div class="cards">
+          <figure>
+            <img src="assets/demo1.svg" alt="Demo image 1">
+            <figcaption>Demo 圖片 1</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/demo2.svg" alt="Demo image 2">
+            <figcaption>Demo 圖片 2</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="demo">
+        <h2>DEMO</h2>
+        <p>下面是一個簡單的互動粒子 DEMO：滑鼠移動會吸引粒子，點擊可以重新產生顏色主題。</p>
+        <div class="demo-area">
+          <canvas id="demoCanvas" width="800" height="400"></canvas>
+          <div class="demo-controls">
+            <button id="regen">重新產生顏色</button>
+            <button id="pause">暫停</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Made by YUN YUN YANG · 範例來自參考專案樣式改寫</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+:root{
+  --bg:#0f1724;
+  --card:#111827;
+  --muted:#9ca3af;
+  --accent:#7c3aed;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#071027);color:#e6eef8}
+.site-header{padding:36px 20px;text-align:center}
+.hero{display:inline-block;padding:20px;border-radius:12px;background:rgba(255,255,255,0.02)}
+.avatar{width:96px;height:96px;border-radius:12px;border:2px solid rgba(255,255,255,0.06);display:block;margin:0 auto 12px}
+h1{margin:0;font-size:28px;letter-spacing:1px}
+.tagline{margin:6px 0 0;color:var(--muted)}
+.content{max-width:980px;margin:28px auto;padding:0 18px}
+.about,.work,.demo{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px;margin-bottom:18px}
+.work .cards{display:flex;gap:12px;flex-wrap:wrap}
+.work figure{background:var(--card);padding:10px;border-radius:8px;flex:1 1 200px;text-align:center}
+.work img{max-width:100%;height:140px;object-fit:cover;border-radius:6px}
+.work figcaption{color:var(--muted);font-size:14px;margin-top:8px}
+.demo-area{display:flex;flex-direction:column;gap:8px;align-items:center}
+canvas{background:linear-gradient(180deg,#021021,#06162a);border-radius:8px;box-shadow:0 6px 28px rgba(0,0,0,0.6)}
+.demo-controls{display:flex;gap:8px;margin-top:8px}
+button{background:var(--accent);border:none;padding:8px 12px;color:white;border-radius:6px;cursor:pointer}
+button#pause{background:#ef4444}
+.site-footer{text-align:center;color:var(--muted);padding:18px 8px;font-size:14px}
+
+@media (max-width:600px){
+  canvas{width:100%;height:220px}
+}
