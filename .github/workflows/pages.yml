@@ -10,11 +10,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: '.'      # The folder the action should deploy.
-          token: ${{ secrets.GITHUB_TOKEN }}
-          clean: true
+          node-version: '16'
+
+      - name: Deploy to gh-pages (peaceiris)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          keep_files: false
+          allow_empty_commit: false
